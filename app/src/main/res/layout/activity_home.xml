@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/picturePlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_overlay" />
+
+    <!-- Menu with three options -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Option 1 -->
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Make a Plan"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/primary_text_color"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:clickable="true"
+
+            />
+
+        <!-- Option 2 -->
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose a Plan"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/primary_text_color"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textSize="20dp"
+          />
+
+        <!-- Option 3 -->
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Plans"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/primary_text_color"
+            android:clickable="true"
+            android:textSize="20dp"
+           />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:padding="16dp"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/exit"
+            android:onClick=""
+            />
+    </LinearLayout>
+
+    <!-- FrameLayout for switching between screens -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menuLayout">
+
+        <!-- Add fragments or views here to switch between different screens -->
+    </FrameLayout>
+</RelativeLayout>

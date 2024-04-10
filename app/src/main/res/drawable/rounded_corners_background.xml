@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- rounded_corners_background.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="8dp" /> <!-- Adjust the radius value to change the roundness -->
+        <solid android:color="#80000000" /> <!-- Background color with transparency (e.g., dark with 50% opacity) -->
+    </shape>
+
+</selector>

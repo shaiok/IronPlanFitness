@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myPlan_Layout"
+        android:orientation="vertical">
+
+
+        <!-- Plan 1 -->
+
+        <!-- Plan 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+            android:padding="16dp">
+
+            <!-- Plan Name -->
+            <TextView
+                android:id="@+id/planNameTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Push N Pull"
+                android:textSize="18sp"
+
+                android:textStyle="bold"/>
+
+            <!-- Level -->
+            <TextView
+                android:id="@+id/levelTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/planNameTextView2"
+                android:text="Level: Intermediate"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/categoryTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/levelTextView2"
+                android:text="Category: Home / Park"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Number of Days -->
+            <TextView
+                android:id="@+id/numDaysTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoryTextView2"
+                android:text="Days: 5"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numDaysTextView2"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true">
+
+                <!-- Button to start workout -->
+                <Button
+                    android:id="@+id/startWorkoutButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Workout"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Button to see full plan -->
+                <Button
+                    android:id="@+id/seeFullPlanButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See Full Plan"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

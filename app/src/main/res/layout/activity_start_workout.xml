@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".Model.start_workout">
+
+    <!-- Spinner to choose workout -->
+    <Spinner
+        android:id="@+id/workoutSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:popupBackground="@drawable/edittext_background"
+        android:spinnerMode="dropdown" />
+
+    <!-- Start Workout Button -->
+    <Button
+        android:id="@+id/startWorkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutSpinner"
+        android:text="Start Workout"
+        android:background="@drawable/button_background"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Workout Details Layout -->
+    <LinearLayout
+        android:id="@+id/workoutDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+    android:layout_below="@id/startWorkoutButton"
+    android:layout_marginTop="16dp">
+
+    <!-- Workout Name -->
+    <TextView
+        android:id="@+id/workoutNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workout Name"
+        android:textSize="40sp"
+        android:textColor="#00BCD4"
+        android:background="#1E1E1E"
+
+        android:padding="16dp" />
+        <TextView
+            android:id="@+id/exerciseNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Name"
+            android:textSize="40sp"
+            android:textColor="#E91E63"
+            android:background="#1E1E1E"
+
+            android:padding="16dp" />
+
+
+
+    <!-- Sets Remaining -->
+    <TextView
+        android:id="@+id/setsRemainingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sets Remaining: x"
+        android:textSize="18sp"
+        android:textColor="#FF9800"
+        android:background="#1E1E1E"
+        android:padding="16dp" />
+
+    <!-- Reps and Rest Time -->
+        <TextView
+            android:id="@+id/repsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:text="Reps: Y "
+            android:textColor="#FFEB3B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttons_layout1"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:background="#1E1E1E"
+            android:gravity="center"
+            tools:text="2:30"
+            android:textColor="#E91E63"
+            android:textSize="60sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutDetailsLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="16dp">
+
+        <!-- Horizontal Layout for Finish Set and Skip Rest Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Finish Set Button -->
+            <Button
+                android:id="@+id/finishSetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Finish Set"
+                android:background="@drawable/button_background"
+                android:textColor="#121212"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Skip Rest Button -->
+            <Button
+                android:id="@+id/skipRestButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Skip Rest"
+                android:background="@drawable/button_background"
+                android:textColor="#121212"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:background="@drawable/button_background"
+            android:textColor="#121212"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

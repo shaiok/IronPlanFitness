@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary text color for high readability on dark backgrounds -->
+    <color name="primary_text_color">#F8F8F8</color>
+
+    <!-- Secondary text color for subtitles or less important text -->
+    <color name="secondary_text_color">#A9A9A9</color>
+
+    <!-- Accent colors for interactive elements like buttons or icons -->
+    <color name="accent_color_green">#32CD32</color>
+    <color name="accent_color_crimson">#DC143C</color>
+    <color name="accent_color_gold">#FFD700</color>
+
+    <!-- Background colors for different sections or cards -->
+    <color name="background_color_dark_slate_blue">#483D8B</color>
+    <color name="background_color_midnight_blue">#191970</color>
+    <color name="background_color_charcoal">#36454F</color>
+
+    <!-- Interactive elements colors -->
+    <color name="interactive_color_electric_blue">#7DF9FF</color>
+    <color name="interactive_color_neon_green">#39FF14</color>
+    <color name="interactive_color_vivid_purple">#9D00FF</color>
+
+    <!-- Borders and dividers colors -->
+    <color name="border_color_dark_gray">#404040</color>
+    <color name="border_color_blue_gray">#536878</color>
+</resources>
